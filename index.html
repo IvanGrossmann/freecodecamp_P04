@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav id="navbar">
+            <header><h1>Hypertext Markup Language</h1></header>
+            <ul>
+                <li><a class="nav-link" href="#description_generale">Description générale</a></li>
+                <li><a class="nav-link" href="#origine">Origine</a></li>
+                <li><a class="nav-link" href="#avenir_html">L'avenir du HTML</a></li>
+                <li><a class="nav-link" href="#syntaxe_html">Syntaxe du HTML</a></li>
+                <li><a class="nav-link" href="#structure_html">Structure des documents HTML</a></li>
+                <li><a class="nav-link" href="#titre">Les titres</a></li>
+                <li><a class="nav-link" href="#element_html">Elements de HTML</a></li>
+            </ul>
+    </nav>
+    <section id="page">
+        <main id="main-doc">
+            <section class="main-section" id="description_generale">
+                <header><h1>Description générale</h1></header>
+                <p>Le HyperText Markup Language, généralement abrégé HTML ou dans sa dernière version HTML5, est le langage de balisage conçu pour représenter les pages web. C’est un langage permettant d’écrire de l’hypertexte, d’où son nom. HTML permet également de structurer sémantiquement la page, de mettre en forme le contenu, de créer des formulaires de saisie, d’inclure des ressources multimédias dont des images, des vidéos, et des programmes informatiques. Il permet de créer des documents interopérables avec des équipements très variés de manière conforme aux exigences de l’accessibilité du web. Il est souvent utilisé conjointement avec le langage de programmation JavaScript et des feuilles de style en cascade (CSS). HTML est inspiré du Standard Generalized Markup Language (SGML). Il s'agit d'un format ouvert.</p>
+            </section>
+            <section class="main-section" id="origine">
+                <header><h1>Origine</h1></header>
+                <p>HTML est une des trois inventions à la base du World Wide Web, avec le Hypertext Transfer Protocol (HTTP) et les adresses web (URL). HTML a été inventé pour permettre d'écrire des documents hypertextuels liant les différentes ressources d’Internet avec des hyperliens. Aujourd’hui, ces documents sont appelés « page web ». En août 1991, lorsque Tim Berners-Lee annonce publiquement le web sur Usenet, il ne cite que le langage SGML, mais donne l’URL d’un document de suffixe .html. Dans son livre Weaving the web3, Tim Berners-Lee décrit la décision de baser HTML sur SGML comme étant aussi « diplomatique » que technique : techniquement, il trouvait SGML trop complexe, mais il voulait attirer la communauté hypertexte qui considérait que SGML était le langage le plus prometteur pour standardiser le format des documents hypertexte. En outre, SGML était déjà utilisé par son employeur, l’Organisation européenne pour la recherche nucléaire (CERN). Les premiers éléments du langage HTML comprennent le titre du document, les hyperliens, la structuration du texte en titres, sous-titres, listes ou texte brut, et un mécanisme rudimentaire de recherche par index. La description de HTML est alors assez informelle et principalement définie par le support des divers navigateurs web contemporains. Dan Connolly a aidé à faire de HTML une véritable application de SGML4.</p>
+            </section>
+            <section class="main-section" id="avenir_html">
+                <header><h1>L'avenir du HTML</h1></header>
+                <p>En janvier 2011, des divergences de points de vue entre Ian Hickson (ingénieur chez Google), qui écrit la spécification HTML5, et les membres du groupe de travail du W3C conduisent le WHATWG à créer HTML Living Standard (littéralement : standard vivant du HTML), une spécification de HTML prévue pour être en constante évolution, afin de coller avec les développements rapides de nouvelles fonctionnalités par les développeurs de navigateurs23[réf. non conforme] (par opposition à des versions numérotées, donc « fixes »).</p>
+                <p>Le HTML Living Standard a pour but d'inclure le HTML5, et de le développer en permanence24[réf. non conforme]. En particulier, dans la version du 22 août 2012, le document de référence24 explique que le HTML5 du W3C, publié le 22 juin 2012, est basé sur une version du HTML Living Standard, mais que le HTML Living Standard ne s'arrête pas à cette version, et continue à évoluer. Il développe en particulier les différences entre la version W3C (le HTML5) et la version HTML Living Standard (par exemple, les nouveaux bugs ne sont pas pris en compte dans le HTML5, des différences syntaxiques sont répertoriées, et de nouvelles balises créées par le HTML Living Standard ne sont pas incluses dans le HTML5).</p>
+            </section>
+            <section class="main-section" id="syntaxe_html">
+                <header><h1>Syntaxe du HTML</h1></header>
+                <p>Jusqu’à sa version 4.01 comprise, HTML est formellement décrit comme une application du Standard Generalized Markup Language (SGML). Cependant, les spécifications successives admettent, par différents biais, que les agents utilisateurs ne sont pas, en pratique, des analyseurs SGML conformes25. Les navigateurs Web n’ont jamais été capables de déchiffrer l’ensemble des variations de syntaxe permises par SGML26 ; en revanche ils sont généralement capables de rattraper automatiquement de nombreuses erreurs de syntaxe, suivant la première partie de la « loi de Postel » : « Soyez libéral dans ce que vous acceptez, et conservateur dans ce que vous envoyez » (RFC 79127). De fait, les développeurs de pages Web et de navigateurs Web ont toujours pris beaucoup de liberté avec les règles syntaxiques de SGML. Enfin, la document type definition (DTD) de HTML, soit la description technique formelle de HTML, n’a été écrite par Dan Connolly que quelques années après l’introduction de HTML4.</p>
+                <p>Malgré les libertés prises avec la norme, la terminologie propre à SGML est utilisée : document, élément, attribut, valeur, balise, entité, validité, application, etc. Grâce à la DTD, il est possible de vérifier automatiquement la validité d’un document HTML à l’aide d’un parseur SGML28.</p>
+                <p>À l’origine, HTML a été conçu pour baliser (ou marquer) simplement le texte, notamment pour y ajouter des hyperliens. On utilisait un minimum de balises, comme dans le document HTML suivant :</p>
+                <pre>
+                    &lth1&gtexemple d'un titre&lt/h1&gt
+                </pre>
+            </section>
+            <section class="main-section" id="structure_html">
+                <header><h1>Structure des documents HTML</h1></header>
+                <p>Dans les premières années, les documents HTML étaient souvent considérés comme des structures plates, et les balises comme des commandes de style31. Ainsi la balise <p> était considérée comme un saut de ligne, et la balise </p> était ignorée. Ou encore lorsque JavaScript 1.0 est apparu, il ne donnait accès qu’aux liens et formulaires du document à travers les tables document.forms et document.links.
+    
+                <p>Avec l’introduction des Cascading Style Sheets et du Document Object Model, il a fallu considérer que les documents HTML ont une véritable structure en arbre, avec un élément racine contenant tous les autres éléments32. Les balises ouvrantes et fermantes de ces éléments restent d’ailleurs optionnelles. Cependant, aujourd’hui, on a tendance à baliser chaque élément33 et à indiquer la DTD. À l'exception de l'élément à la racine, chaque élément a exactement un élément parent direct ; cet « arbre du document » est notamment utilisé par la structure de formatage qui en est dérivée pour l’application des feuilles de style en cascade où chaque élément peut avoir un fond, un bord et une marge propres.</p>
+                
+                <p>La structure et le code des sites web peut d'ailleurs se consulter en ajoutant view-source: devant l'url de la page. Pour la page ci-présente cela donnerait view-source:https://fr.m.wikipedia.org/wiki/Hypertext_Markup_Language.</p>
+            </section>
+            <section class="main-section" id="titre">
+                <header><h1>Les titres</h1></header>
+                <pre>
+                    &lth1&gtexemple d'un h1&lt/h1&gt
+                </pre>
+                <pre>
+                    &lth2&gtexemple d'un h2&lt/h2&gt
+                </pre>
+                <pre>
+                    &lth3&gtexemple d'un h3&lt/h3&gt
+                </pre>
+                <pre>
+                    &lth4&gtexemple d'un h4&lt/h4&gt
+                </pre>
+                <pre>
+                    &lth5&gtexemple d'un h5&lt/h5&gt
+                </pre>
+                <pre>
+                    &lth6&gtexemple d'un h6&lt/h6&gt
+                </pre>
+            </section>
+            <section>
+                <header class="main-section" id="element_html"><h1>Elements de HTML</h1></header>
+                <ul>
+                    <li>Structure dénérale</li>
+                    <li>Information sur la langue</li>
+                    <li>Marquage sémantique</li>
+                    <li>Listes</li>
+                    <li>Tables</li>
+                    <li>Hyperliens</li>
+                    <li>Inclusion d'images, applets et objets divers</li>
+                </ul>
+            </section>
+        </main>
+    </section>
+    
+    
+</body>
+</html>
